@@ -21,6 +21,10 @@ describe('possibleSyllables', () => {
     expect(sorted(['m', 'a', 'l', 'x'], ['CV', 'CVC'])).toEqual(['la', 'lal', 'lax', 'ma', 'mal', 'max'])
   })
 
+  it('builds VC with ch', () => {
+    expect(sorted(['ch', 'a', 'i'], ['VC'])).toEqual(['ach', 'ich'])
+  })
+
   it('builds CCV clusters except dl, tl, vl', () => {
     expect(sorted(['b', 't', 'l', 'r', 'a'], ['CCV'])).toEqual(['bla', 'bra', 'tra'])
   })

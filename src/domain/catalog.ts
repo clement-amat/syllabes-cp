@@ -30,7 +30,7 @@ export interface Sound {
   graphemes: readonly Grapheme[]
 }
 
-const CODAS = ['l', 'r', 's', 'c-k', 'f', 'p', 'k', 'x']
+const CODAS = ['l', 'r', 's', 'c-k', 'f', 'p', 'k', 'x', 'ch']
 const CODAS_E = CODAS.filter((coda) => coda !== 's')
 const CODAS_COMPLEX = ['l', 'r', 'f']
 
